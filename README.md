@@ -1,491 +1,274 @@
 # SentinelMesh AI
 
-## Autonomous AI Guardian for Connected Environments
+## Autonomous AI Agent for Intelligent Infrastructure Monitoring and Response
 
-> SentinelMesh AI is a cyber-physical intelligence layer that learns IoT device behavior, detects anomalies using machine learning, explains risks, and autonomously applies adaptive responses.
+SentinelMesh AI is an AI-powered autonomous monitoring system that detects, analyzes, and responds to anomalies in connected environments.
 
-🎥 **Demo Video:** https://youtu.be/tHQ9lVPxPAY?si=LCI35CEFHrIKVXbQ
+Instead of relying on traditional rule-based monitoring, SentinelMesh combines AI agents, real-time simulation, and intelligent decision-making to understand system behavior, identify risks, explain incidents, and recommend actions.
 
----
-
-## Overview
-
-The world is becoming increasingly connected. Smart cameras, locks, plugs, thermostats, and other IoT devices are becoming part of everyday life.
-
-However, as these systems become more intelligent, they also become harder for humans to monitor. A compromised IoT device is no longer only a cybersecurity issue — it can create real-world physical risks.
-
-SentinelMesh AI explores a future where connected environments can understand their own behavior, recognize abnormal activity, and respond autonomously.
-
-Instead of relying only on predefined security rules, SentinelMesh creates behavioral profiles for devices, detects deviations using machine learning, explains the reasoning behind decisions, and applies adaptive defensive actions.
+Built for the **AI Builders Hackathon**.
 
 ---
 
-# Key Idea
+## 🚀 The Problem
 
-Traditional security systems often follow:
+Modern infrastructure is becoming increasingly complex:
 
-```
-Suspicious activity
-        ↓
-Alert
-        ↓
-Human investigation
-```
+- IoT devices generate massive amounts of data
+- Failures can happen unexpectedly
+- Traditional monitoring systems only detect predefined issues
+- Human operators must manually investigate alerts
 
-SentinelMesh introduces an intelligent response loop:
+Most systems can answer:
 
-```
-Observe
-   ↓
-Learn
-   ↓
-Detect
-   ↓
-Reason
-   ↓
-Act
-   ↓
-Verify
-```
+> "Something is wrong."
 
-The goal is to move from reactive security toward autonomous cyber-physical protection.
+But they struggle to answer:
+
+> "Why did it happen?"
+>
+> "How serious is it?"
+>
+> "What should we do next?"
+
+SentinelMesh AI addresses this by introducing an autonomous AI layer that continuously observes, reasons, and assists decision-making.
 
 ---
 
-# Features
+# 💡 Solution
 
-## 🧠 Behavioral Learning
+SentinelMesh AI creates an intelligent monitoring environment where AI agents:
 
-Each connected device develops its own behavioral baseline.
+1. Observe system state
+2. Analyze incoming signals
+3. Detect abnormal behavior
+4. Reason about possible causes
+5. Explain incidents
+6. Recommend corrective actions
 
-Different devices have different patterns:
-
-- A camera has communication and streaming behavior.
-- A smart lock has access-control behavior.
-- A smart plug has energy-consumption behavior.
-
-SentinelMesh analyzes devices individually instead of applying one universal rule set.
-
----
-
-## 🔍 Machine Learning Anomaly Detection
-
-SentinelMesh combines multiple ML approaches to identify unusual behavior.
-
-Implemented techniques:
-
-- **Isolation Forest**
-  - Detects unusual patterns compared with previous observations.
-
-- **Statistical anomaly detection**
-  - Measures deviation from learned device behavior.
-
-- **Cluster-based behavior analysis**
-  - Identifies activity that differs from normal behavior groups.
-
-The system focuses on discovering behavioral changes rather than only matching known attack signatures.
+The system acts as an AI operations assistant capable of understanding the context behind events rather than only detecting thresholds.
 
 ---
 
-## 📊 Risk Assessment
+# 🧠 AI Architecture
+             User Dashboard
+                   |
+                   |
+          AI Decision Layer
+                   |
+    --------------------------------
+    |              |               |
+    Detection Agent  Analysis Agent  Response Agent
+    |              |               |
+    --------------------------------
+                   |
+        Simulation Environment
+                   |
+           Connected Devices
 
-Detected anomalies are converted into understandable risk scores.
+## AI Components
 
-Example:
+### 🔎 Anomaly Detection Agent
 
-```
-Unknown communication source
-+
-Abnormal traffic increase
-+
-Unauthorized command attempts
+Continuously analyzes device behavior and identifies unusual patterns.
 
-=
-High-risk behavior
-```
+Capabilities:
+- Detect abnormal states
+- Compare against historical behavior
+- Prioritize important events
 
-The system combines multiple signals to estimate the severity of a situation.
 
----
+### 🧩 Reasoning Agent
 
-## 🤖 Adaptive Response
+Transforms raw signals into understandable explanations.
 
-SentinelMesh does not stop at detection.
+Capabilities:
+- Analyze relationships between events
+- Identify possible root causes
+- Provide human-readable insights
 
-Depending on the risk level, devices can transition into different security states:
 
-| Risk Level | Response |
-|---|---|
-| Low | Continue monitoring |
-| Medium | Increase observation |
-| High | Restricted mode |
-| Critical | Quarantine |
+### ⚡ Response Agent
 
-The goal is to maintain safe operation while reducing potential damage.
+Suggests or triggers appropriate actions.
 
----
-
-## 🔗 Cross-Device Incident Correlation
-
-IoT devices are not isolated.
-
-A compromise of one device can affect another.
-
-Example:
-
-```
-Smart Camera anomaly
-        +
-Unauthorized Smart Lock command
-        =
-Coordinated security incident
-```
-
-SentinelMesh analyzes relationships between devices to understand the wider environment.
+Capabilities:
+- Recommend mitigation steps
+- Reduce response time
+- Assist operators in decision-making
 
 ---
 
-# Architecture
+# ✨ Key Features
 
-![Architecture Diagram](./architecture.png)
+## Real-Time Infrastructure Simulation
 
-```
-                 IoT Simulator
+SentinelMesh provides a simulated environment where devices, sensors, and network components generate live events.
 
-                       ↓
+Examples:
+- Device failures
+- Connectivity problems
+- Abnormal sensor readings
+- System degradation
 
-              Telemetry Collection
 
-                       ↓
+## Autonomous AI Monitoring
 
-              Feature Extraction
+The system continuously evaluates the environment without requiring manual investigation.
 
-                       ↓
+## Explainable AI Decisions
 
-            ML Anomaly Detection
+Instead of simply generating alerts, SentinelMesh explains:
 
-                       ↓
+- What happened
+- Why it happened
+- Which components are affected
+- What action is recommended
 
-              Risk Assessment
 
-                       ↓
+## Interactive Dashboard
 
-            Response Policy Engine
+The interface provides:
 
-                       ↓
-
-          Safe Mode / Recovery Actions
-```
-
----
-
-# How It Works
-
-## 1. IoT Simulation Layer
-
-Because physical hardware was not available, SentinelMesh uses a simulated smart environment.
-
-Simulated devices:
-
-- Smart camera
-- Smart plug
-- Smart lock
-- Smart thermostat
-
-Each device generates telemetry:
-
-- network activity;
-- commands;
-- power usage;
-- sensor values;
-- behavioral history.
+- Live system state
+- Device health visualization
+- AI-generated explanations
+- Incident tracking
+- Simulation controls
 
 ---
 
-## 2. AI Security Engine
-
-The security engine processes telemetry through multiple stages:
-
-### Feature Extraction
-
-Raw device behavior is converted into measurable features:
-
-- network activity;
-- communication patterns;
-- command frequency;
-- power changes;
-- sensor deviations.
-
-### Anomaly Detection
-
-ML models compare current behavior against learned patterns.
-
-### Risk Analysis
-
-The system combines detected signals into a security assessment.
-
-### Response Decision
-
-The system selects an appropriate defensive action.
-
----
-
-# Demo Scenario
-
-The demo shows a complete cyber-physical response cycle.
-
-## Step 1 — Normal Environment
-
-```
-Smart Camera      🟢
-Smart Lock        🟢
-Smart Plug        🟢
-Thermostat        🟢
-```
-
-The system learns normal device behavior.
-
----
-
-## Step 2 — Coordinated Attack
-
-A compromised device begins abnormal activity.
-
-Detected signals:
-
-```
-✓ Unknown communication source
-✓ Unusual traffic pattern
-✓ Unauthorized commands
-✓ Behavioral deviation
-```
-
-The system identifies a possible coordinated incident.
-
----
-
-## Step 3 — AI Analysis
-
-SentinelMesh provides evidence-based explanations:
-
-```
-Threat:
-Possible device compromise
-
-Evidence:
-
-- Communication pattern changed
-- Command behavior differs from baseline
-- Risk level increased
-```
-
----
-
-## Step 4 — Autonomous Response
-
-The system applies protection:
-
-```
-Threat detected
-
-        ↓
-
-Containment requested
-
-        ↓
-
-Device enters restricted mode
-
-        ↓
-
-Suspicious commands denied
-
-        ↓
-
-Response verified
-```
-
----
-
-# AI / ML Implementation
-
-## Models
-
-| Component | Purpose |
-|---|---|
-| Isolation Forest | Detect behavioral outliers |
-| Statistical Analysis | Measure deviation from baseline |
-| Cluster Analysis | Compare behavior groups |
-| Risk Scoring | Combine multiple signals |
-
----
-
-# Technology Stack
-
-## Backend
-
-- Python
-- FastAPI
-- Scikit-learn
+# 🏗️ Technology Stack
 
 ## Frontend
 
 - React
 - TypeScript
-- Tailwind CSS
+- Modern dashboard UI
 
-## Machine Learning
+## Backend
 
-- Isolation Forest
-- Behavioral profiling
-- Anomaly scoring
+- Python
+- AI agent orchestration
+- Event processing
 
-## Simulation
+## AI
 
-- Virtual IoT devices
-- Telemetry generation
-- Attack scenarios
-- Response simulation
+- Large Language Models
+- Autonomous reasoning workflows
+- Intelligent anomaly analysis
+
+## Infrastructure
+
+- AWS services
+- Cloud-based AI integration
+- Real-time simulation environment
 
 ---
 
-# Project Structure
+# 🎬 Demo
 
-```
+Demo video:
+(https://youtu.be/tHQ9lVPxPAY?si=LCI35CEFHrIKVXbQ)
+
+---
+
+# 🧪 How It Works
+
+Example scenario:
+
+A connected device starts behaving abnormally.
+
+Traditional monitoring:
+Device temperature exceeded threshold
+→ Alert generated
+→ Human investigates
+
+
+SentinelMesh AI:
+Device temperature increased
+        ↓
+AI detects unusual pattern
+        ↓
+Reasoning agent analyzes context
+        ↓
+AI identifies likely cause
+        ↓
+System explains impact
+        ↓
+AI recommends action
+
+
+---
+
+# 📂 Project Structure
 SentinelMesh-AI/
-
-├── dashboard/
-│   └── React + TypeScript frontend
 │
-├── security_engine/
-│   ├── anomaly detection
-│   ├── risk scoring
-│   ├── ML models
-│   └── response engine
+├── frontend/          # User interface
+├── backend/           # API and AI services
+├── agents/            # AI agent logic
+├── simulation/        # Environment simulator
+├── docs/
+│   └── architecture.png
 │
-├── iot_simulator/
-│   ├── virtual devices
-│   ├── telemetry generation
-│   └── attack scenarios
-│
-├── tests/
-│
-└── architecture.png
-```
+└── README.md
+
 
 ---
 
-# Running Locally
+# 🌍 Impact
 
-## Requirements
+SentinelMesh AI demonstrates how autonomous AI agents can improve infrastructure reliability by:
 
-- Python 3.10+
-- Node.js
+- Reducing manual monitoring effort
+- Improving incident response time
+- Making complex systems easier to understand
+- Supporting operators with intelligent recommendations
 
----
+Potential applications:
 
-## 1. Start IoT Simulator
-
-```bash
-cd SentinelMesh-AI
-
-IOT_SIM_HOST=127.0.0.1 .venv/bin/python -m iot_simulator
-```
-
----
-
-## 2. Start Security Engine
-
-```bash
-cd SentinelMesh-AI
-
-ENGINE_HOST=127.0.0.1 .venv/bin/python -m security_engine
-```
+- Smart buildings
+- IoT networks
+- Industrial monitoring
+- Cloud infrastructure
+- Enterprise operations
 
 ---
 
-## 3. Start Dashboard
+# 🏆 Why AI?
 
-```bash
-cd dashboard
+AI is not used only as a chatbot layer.
 
-npm install
-npm run dev
-```
+The core value comes from AI's ability to:
 
-Open:
+- Understand complex system states
+- Connect multiple signals together
+- Reason about possible causes
+- Generate explanations
+- Assist with autonomous decisions
 
-```
-http://127.0.0.1:5173
-```
-
----
-
-# AI Tools Disclosure
-
-AI-assisted development tools were used during development.
-
-I used Cursor as a development assistant for:
-
-- implementation support;
-- debugging;
-- code organization;
-- refactoring assistance.
-
-The project architecture, system design, ML approach, problem definition, and final decisions were designed and evaluated by me.
+SentinelMesh demonstrates a future where AI agents become active partners in managing complex systems.
 
 ---
 
-# Challenges
+# 🔮 Future Improvements
 
-The biggest challenge was creating a realistic intelligent environment without access to physical IoT hardware.
+Possible next steps:
 
-I had to simulate:
-
-- realistic device behavior;
-- normal variations;
-- attack scenarios;
-- physical consequences.
-
-Another challenge was avoiding a simple rule-based security system.
-
-The goal was to create a complete AI pipeline:
-
-```
-Behavior Observation
-        ↓
-Machine Learning Detection
-        ↓
-Risk Assessment
-        ↓
-Adaptive Response
-```
+- Multi-agent collaboration
+- More advanced predictive maintenance
+- Real hardware integration
+- Automated remediation
+- Learning from operator feedback
 
 ---
 
-# Future Improvements
+# 👥 Team
 
-Future versions could include:
-
-- real IoT hardware integration;
-- larger behavioral datasets;
-- stronger autonomous AI agents;
-- computer vision-based environment understanding;
-- edge deployment;
-- personalized security recommendations.
+Built for the **AI Builders Hackathon**.
 
 ---
 
-# Why I Built This
+# 📜 License
 
-Technology should not only connect the world.
-
-It should also help make it safer.
-
----
-
-## SentinelMesh AI
-
-**Observe. Understand. Protect.**
-
-Autonomous AI for intelligent environments.
+MIT License
