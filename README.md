@@ -199,21 +199,6 @@ AI recommends action
 
 ---
 
-# 📂 Project Structure
-SentinelMesh-AI/
-│
-├── frontend/          # User interface
-├── backend/           # API and AI services
-├── agents/            # AI agent logic
-├── simulation/        # Environment simulator
-├── docs/
-│   └── architecture.png
-│
-└── README.md
-
-
----
-
 # 🌍 Impact
 
 SentinelMesh AI demonstrates how autonomous AI agents can improve infrastructure reliability by:
