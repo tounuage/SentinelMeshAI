@@ -6,8 +6,6 @@ SentinelMesh AI is an AI-powered autonomous monitoring system that detects, anal
 
 Instead of relying on traditional rule-based monitoring, SentinelMesh combines AI agents, real-time simulation, and intelligent decision-making to understand system behavior, identify risks, explain incidents, and recommend actions.
 
-Built for the **AI Builders Hackathon**.
-
 ---
 
 ## 🚀 The Problem
@@ -260,15 +258,3 @@ Possible next steps:
 - Real hardware integration
 - Automated remediation
 - Learning from operator feedback
-
----
-
-# 👥 Team
-
-Built for the **AI Builders Hackathon**.
-
----
-
-# 📜 License
-
-MIT License
